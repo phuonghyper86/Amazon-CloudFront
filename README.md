@@ -6,5 +6,5 @@ Yêu cầu:
   Viết ứng dụng minh họa
 
 Thông tin thành viên:
-  Lê Trần Thái Nhân 19110414
-  Trần Duy Phương   19110439
+ - Lê Trần Thái Nhân 19110414
+ - Trần Duy Phương   19110439
