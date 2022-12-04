@@ -1,8 +1,23 @@
-<input (change)="onImagePicked($event)" placeholder="Upload Image" type="file" />
-<button (click)="onImageUpload()">Upload Image</button>
+<div class="all">
+  <div class="title">
+    <img class="logo" src="../assets/image/1.png" alt="" />
+    <p class="text">Trang lưu trữ hình ảnh</p>
+  </div>
 
-<div *ngIf="imageUrl">
-  Preview Image from AWS
-  <br />
-  <img width="200px" src="https://thainhanupload.s3.amazonaws.com/{{ imageUrl }}" />
+  <p class="text1">Hãy tải ảnh bạn muốn lưu trữ lên đây</p>
+  <input
+    (change)="onImagePicked($event)"
+    placeholder="Upload Image"
+    type="file"
+  />
+  <button (click)="onImageUpload()">Upload Image</button>
+
+  <div *ngIf="imageUrl">
+    Preview Image from AWS
+    <br />
+    <img
+      width="200px"
+      src="https://cloudfront-upload.s3.amazonaws.com/{{ imageUrl }}"
+    />
+  </div>
 </div>
