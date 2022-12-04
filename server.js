@@ -13,7 +13,7 @@ app.get("/new", function (req, res) {
 
 app.listen(process.env.PORT || 5000);
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({origin: '*'}));
 
 app.post('/api/v1/upload', upload.array('image', 1), (req, res) => {
   res.send({ image: req.file });
