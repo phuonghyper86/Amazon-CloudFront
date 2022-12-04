@@ -9,6 +9,10 @@ export class ImageUploadService {
 
   imageUpload(imageForm: FormData) {
     console.log("image uploading");
-    return this.http.post("https://test.jobhere.tech/api/v1/upload", imageForm);
+    return this.http.post(
+      "http://cloudnhan-env.eba-rxuyxrgh.ap-southeast-1.elasticbeanstalk.com/api/v1/upload",
+      imageForm
+    );
   }
 }
+// https://test.jobhere.tech
