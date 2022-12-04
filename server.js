@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const app = express();
 const cors = require('cors');
 const upload = require('./middleware/file-upload');
-const express = require("express");
 
 app.get("/", function (req, res) {
   res.send("IT WORKED");
