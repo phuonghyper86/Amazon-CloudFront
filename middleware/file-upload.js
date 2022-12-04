@@ -25,7 +25,7 @@ const upload = multer({
   storage: multerS3({
     acl: 'public-read',
     s3,
-    bucket: 'cloudfront-upload', 
+    bucket: 'nhanangular', 
     key: function(req, file, cb) {
       /*I'm using Date.now() to make sure my file has a unique name*/
       req.file = Date.now() + file.originalname;
